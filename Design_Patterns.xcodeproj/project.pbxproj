@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		031992621985871B00744963 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 031992611985871B00744963 /* main.cpp */; };
 		031992641985871B00744963 /* Design_Patterns.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 031992631985871B00744963 /* Design_Patterns.1 */; };
+		0319926C1985875800744963 /* SingletonPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0319926A1985875800744963 /* SingletonPattern.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		0319925E1985871B00744963 /* Design_Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Design_Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		031992611985871B00744963 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		031992631985871B00744963 /* Design_Patterns.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Design_Patterns.1; sourceTree = "<group>"; };
+		0319926A1985875800744963 /* SingletonPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingletonPattern.cpp; sourceTree = "<group>"; };
+		0319926B1985875800744963 /* SingletonPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonPattern.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 			children = (
 				031992611985871B00744963 /* main.cpp */,
 				031992631985871B00744963 /* Design_Patterns.1 */,
+				0319926A1985875800744963 /* SingletonPattern.cpp */,
+				0319926B1985875800744963 /* SingletonPattern.h */,
 			);
 			path = Design_Patterns;
 			sourceTree = "<group>";
@@ -117,6 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0319926C1985875800744963 /* SingletonPattern.cpp in Sources */,
 				031992621985871B00744963 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
