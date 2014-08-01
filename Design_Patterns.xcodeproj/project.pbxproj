@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		031992621985871B00744963 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 031992611985871B00744963 /* main.cpp */; };
 		031992641985871B00744963 /* Design_Patterns.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 031992631985871B00744963 /* Design_Patterns.1 */; };
-		0319926C1985875800744963 /* SingletonPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0319926A1985875800744963 /* SingletonPattern.cpp */; };
+		03199288198C0B9700744963 /* SingletonPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03199286198C0B9700744963 /* SingletonPattern.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +29,8 @@
 		0319925E1985871B00744963 /* Design_Patterns */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Design_Patterns; sourceTree = BUILT_PRODUCTS_DIR; };
 		031992611985871B00744963 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		031992631985871B00744963 /* Design_Patterns.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Design_Patterns.1; sourceTree = "<group>"; };
-		0319926A1985875800744963 /* SingletonPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingletonPattern.cpp; sourceTree = "<group>"; };
-		0319926B1985875800744963 /* SingletonPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonPattern.h; sourceTree = "<group>"; };
+		03199286198C0B9700744963 /* SingletonPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SingletonPattern.cpp; sourceTree = "<group>"; };
+		03199287198C0B9700744963 /* SingletonPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonPattern.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +65,18 @@
 			children = (
 				031992611985871B00744963 /* main.cpp */,
 				031992631985871B00744963 /* Design_Patterns.1 */,
-				0319926A1985875800744963 /* SingletonPattern.cpp */,
-				0319926B1985875800744963 /* SingletonPattern.h */,
+				03199285198C0B9700744963 /* Singleton_Design_Patter */,
 			);
 			path = Design_Patterns;
+			sourceTree = "<group>";
+		};
+		03199285198C0B9700744963 /* Singleton_Design_Patter */ = {
+			isa = PBXGroup;
+			children = (
+				03199286198C0B9700744963 /* SingletonPattern.cpp */,
+				03199287198C0B9700744963 /* SingletonPattern.h */,
+			);
+			path = Singleton_Design_Patter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0319926C1985875800744963 /* SingletonPattern.cpp in Sources */,
+				03199288198C0B9700744963 /* SingletonPattern.cpp in Sources */,
 				031992621985871B00744963 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +241,7 @@
 				031992691985871B00744963 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
