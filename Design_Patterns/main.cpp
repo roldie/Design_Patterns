@@ -7,27 +7,35 @@
 //
 
 #include <iostream>
-#include "SingletonPattern.h"
+#include "DuckClass.h"
+#include "MallardDuckClass.h"
+#include "QuackBehavior.h"
+#include "FlyBehavior.h"
+#include "IDontQuack.h"
+#include "IDontFly.h"
 
 using namespace::std;
 
 int main(int argc, const char * argv[])
 {
 
-    //instantiate a singleton class
+    //Notice how I code to the interface, not the implementation
+    DuckClass *mallard=new MallardDuckClass();  //I create a mallard duck class
     
-    SingletonPattern *singleton=SingletonPattern::sharedInstance();
+    mallard->performQuack(); //performQuack prints that the mallard duck does quack
+    mallard->performFly(); //performFly prints that the mallard duck does fly
     
-    singleton->setValue(5); //set the value of i to 5
+    //Now I'm going to create a new behaviors which takes away the quacking and flying from the mallard duck
     
-    cout<<singleton->getValue()<<endl; //print the value of i
+    QuackBehavior *nowICantQuack=new IDontQuack();
+    FlyBehavior *nowICantFly=new IDontFly();
     
-    //instantiate another singleton class
-
-    SingletonPattern *singletonCopy=SingletonPattern::sharedInstance();
+    mallard->setFlyBehavior(nowICantFly); //I'm going to set the new quack behaviors to the mallard duck
     
-    singletonCopy->setValue(32); //set the value of the singleton copy to 32
+    mallard->setQuackBehavior(nowICantQuack);//I'm going to set the new fly behaviors to the mallard duck
     
-    cout<<singleton->getValue()<<endl; //get the value of the original singleton
+    mallard->performQuack(); //performQuack prints that the mallard duck does NOT quack
+    mallard->performFly(); //performFly prints that the mallard duck does NOT fly
+    
 }
 

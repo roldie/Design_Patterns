@@ -12,7 +12,9 @@
 class FlyBehavior{
     
 public:
-    virtual fly(){}=0;
+    
+    virtual void fly()=0;
+
 };
 
 #endif

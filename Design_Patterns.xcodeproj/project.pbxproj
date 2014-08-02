@@ -10,6 +10,12 @@
 		031992621985871B00744963 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 031992611985871B00744963 /* main.cpp */; };
 		031992641985871B00744963 /* Design_Patterns.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 031992631985871B00744963 /* Design_Patterns.1 */; };
 		03199288198C0B9700744963 /* SingletonPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03199286198C0B9700744963 /* SingletonPattern.cpp */; };
+		03199292198C9BC900744963 /* ICanFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03199290198C9BC900744963 /* ICanFly.cpp */; };
+		03199295198C9BD500744963 /* IDontFly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03199293198C9BD500744963 /* IDontFly.cpp */; };
+		03199298198C9BE300744963 /* ICanQuack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03199296198C9BE300744963 /* ICanQuack.cpp */; };
+		0319929B198C9BEF00744963 /* IDontQuack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03199299198C9BEF00744963 /* IDontQuack.cpp */; };
+		0319929E198C9CDA00744963 /* DuckClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0319929C198C9CDA00744963 /* DuckClass.cpp */; };
+		031992A1198C9FD000744963 /* MallardDuckClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0319929F198C9FD000744963 /* MallardDuckClass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +39,18 @@
 		03199287198C0B9700744963 /* SingletonPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonPattern.h; sourceTree = "<group>"; };
 		0319928B198C78FE00744963 /* FlyBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyBehavior.h; sourceTree = "<group>"; };
 		0319928C198C790A00744963 /* QuackBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuackBehavior.h; sourceTree = "<group>"; };
+		03199290198C9BC900744963 /* ICanFly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ICanFly.cpp; sourceTree = "<group>"; };
+		03199291198C9BC900744963 /* ICanFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICanFly.h; sourceTree = "<group>"; };
+		03199293198C9BD500744963 /* IDontFly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IDontFly.cpp; sourceTree = "<group>"; };
+		03199294198C9BD500744963 /* IDontFly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDontFly.h; sourceTree = "<group>"; };
+		03199296198C9BE300744963 /* ICanQuack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ICanQuack.cpp; sourceTree = "<group>"; };
+		03199297198C9BE300744963 /* ICanQuack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICanQuack.h; sourceTree = "<group>"; };
+		03199299198C9BEF00744963 /* IDontQuack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IDontQuack.cpp; sourceTree = "<group>"; };
+		0319929A198C9BEF00744963 /* IDontQuack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDontQuack.h; sourceTree = "<group>"; };
+		0319929C198C9CDA00744963 /* DuckClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DuckClass.cpp; sourceTree = "<group>"; };
+		0319929D198C9CDA00744963 /* DuckClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuckClass.h; sourceTree = "<group>"; };
+		0319929F198C9FD000744963 /* MallardDuckClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MallardDuckClass.cpp; sourceTree = "<group>"; };
+		031992A0198C9FD000744963 /* MallardDuckClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MallardDuckClass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +105,10 @@
 			children = (
 				0319928D198C797800744963 /* Behaviors */,
 				0319928A198C78D000744963 /* Interface */,
+				0319929C198C9CDA00744963 /* DuckClass.cpp */,
+				0319929D198C9CDA00744963 /* DuckClass.h */,
+				0319929F198C9FD000744963 /* MallardDuckClass.cpp */,
+				031992A0198C9FD000744963 /* MallardDuckClass.h */,
 			);
 			path = Strategy_Design_Pattern;
 			sourceTree = "<group>";
@@ -103,8 +125,32 @@
 		0319928D198C797800744963 /* Behaviors */ = {
 			isa = PBXGroup;
 			children = (
+				0319928E198C9BA900744963 /* FlyBehavior */,
+				0319928F198C9BA900744963 /* QuackBehavior */,
 			);
 			path = Behaviors;
+			sourceTree = "<group>";
+		};
+		0319928E198C9BA900744963 /* FlyBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				03199290198C9BC900744963 /* ICanFly.cpp */,
+				03199291198C9BC900744963 /* ICanFly.h */,
+				03199293198C9BD500744963 /* IDontFly.cpp */,
+				03199294198C9BD500744963 /* IDontFly.h */,
+			);
+			path = FlyBehavior;
+			sourceTree = "<group>";
+		};
+		0319928F198C9BA900744963 /* QuackBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				03199296198C9BE300744963 /* ICanQuack.cpp */,
+				03199297198C9BE300744963 /* ICanQuack.h */,
+				03199299198C9BEF00744963 /* IDontQuack.cpp */,
+				0319929A198C9BEF00744963 /* IDontQuack.h */,
+			);
+			path = QuackBehavior;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0319929E198C9CDA00744963 /* DuckClass.cpp in Sources */,
+				0319929B198C9BEF00744963 /* IDontQuack.cpp in Sources */,
+				03199298198C9BE300744963 /* ICanQuack.cpp in Sources */,
 				03199288198C0B9700744963 /* SingletonPattern.cpp in Sources */,
 				031992621985871B00744963 /* main.cpp in Sources */,
+				03199295198C9BD500744963 /* IDontFly.cpp in Sources */,
+				03199292198C9BC900744963 /* ICanFly.cpp in Sources */,
+				031992A1198C9FD000744963 /* MallardDuckClass.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
